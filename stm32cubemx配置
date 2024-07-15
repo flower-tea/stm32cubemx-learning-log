@@ -1,7 +1,5 @@
 //首先关于STM32CubeMX软件，自己上网找下载方法，使用stlink或者jlink均可以对单片机进行烧录。
 //选择Start My project from MCU，开始新工程，在搜索框里选择自己的MCU型号。
-//
-！[begin-cube](https://github.com/flower-tea/Pic-data/blob/main/)
-<div align="center">
-  <img src="https://github.com/flower-tea/Pic-data/blob/main/begin-cube.jpg">
-</div>
+
+！[begin-cube](https://github.com/flower-tea/Pic-data/blob/main/begin-cube.jpg)
+
