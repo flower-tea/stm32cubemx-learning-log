@@ -1,0 +1,26 @@
+//芯片上所有的引脚几乎都可以设置为input与output
+//对于接口来说常用的代码为：
+
+HAL_GPIO_WritePin(GPIOX,GPIO_Pin_Y,GPIO_PIN_SET);     //写入
+HAL_GPIO_ReadPin(GPIOX,GPIO_Pin_Y,GPIO_PIN_SET);      //读取
+HAL_GPIO_TogglePin(GPIOX,GPIO_Pin_Y);                 //反转
+
+
+//GPIO_PIN_SET,将电平置于高电平，3.3V   ；    GPIO_PIN_RESET,将电平置于低电平，0V
+//其中X = A，B，C…………，Y = 1，2，3……………代表PA2，PB5，PC7等等。
+//若设置为标签，即在cubeMX中将其User Label 改为自己的标签，如LED，则变为
+
+
+HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+HAL_GPIO_ReadPin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+
+
+//引脚有3种模式，可以在cubeMX中设置：
+//Pull-up                      上拉模式：上拉电阻置于高电平。
+//Pull-Down                    下拉模式：下拉电阻置于低电平。
+//No Pull-up and no pull-down  浮空模式：既不上拉也不下拉。
+
+//模式的应用：
+//一般来说，浮空模式用于读取低电平与高电平，或者输出高低电平。
+//上拉模式可以外接一个按钮，按下即可以将该引脚接入低电平，
