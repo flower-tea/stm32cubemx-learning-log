@@ -1,0 +1,26 @@
+//ADC 测量范围0~3.3V，可以使用STM32CubeMonitor进行检测，一般使用stlink才可以进行配置，连接。
+//
+//
+//
+//
+//
+//
+//
+//
+//关于ADC的函数：
+
+HAL_ADC_Start(&hadcX);
+
+HAL_ADC_Start_IT(&hadcX);  
+HAL_ADC_Start_DMA(&hadc1,(uint32_t*)AD_value,count);
+
+
+
+//中断函数
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+  if(hadc->Instance == hadc1.Instance)
+  {  
+    
+  }
+}
