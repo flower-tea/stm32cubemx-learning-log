@@ -25,4 +25,25 @@
 //
 //
 //
-//
+
+
+
+//TIM相关代码
+HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);             //开启TIM1的通道1的PWM波
+HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_1);          //开启TIM1通道1的互补PWM波
+HAL_TIM_Base_Start(&htim2);                          //开启TIM2定时器
+HAL_TIM_Base_Start_IT(&htim2);                       //开启TIM2定时器的中断
+
+
+
+
+//中断函数
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(htim->Instance == htim1.Instance)
+	{
+
+  }
+}
+
+
