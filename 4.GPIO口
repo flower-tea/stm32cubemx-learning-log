@@ -1,9 +1,9 @@
 //芯片上所有的引脚几乎都可以设置为input与output
 //对于接口来说常用的代码为：
 
-HAL_GPIO_WritePin(GPIOX,GPIO_Pin_Y,GPIO_PIN_SET);     //写入
-HAL_GPIO_ReadPin(GPIOX,GPIO_Pin_Y,GPIO_PIN_SET);      //读取
-HAL_GPIO_TogglePin(GPIOX,GPIO_Pin_Y);                 //反转
+HAL_GPIO_WritePin(GPIOX,GPIO_PIN_Y,GPIO_PIN_SET);     //写入
+HAL_GPIO_ReadPin(GPIOX,GPIO_PIN_Y,GPIO_PIN_SET);      //读取
+HAL_GPIO_TogglePin(GPIOX,GPIO_PIN_Y);                 //反转
 
 
 //GPIO_PIN_SET,将电平置于高电平，3.3V   ；    GPIO_PIN_RESET,将电平置于低电平，0V
